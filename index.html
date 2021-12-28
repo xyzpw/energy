@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="src/style.css"/>
+    <script src="src/script.js"></script>
+  </head>
+  <body>
+    <select id="energy-select">
+      <option value="kinetic">Kinetic energy</option>
+      <option value="potential">Potential energy</option>
+      <option value="electric">Electric energy</option>
+      <option value="force">Force</option>
+      <option value="impulse">Impulse</option>
+      <option value="work">Work</option>
+    </select>
+    <div id="main">
+      <div id="kinetic">
+        <label>Mass (kg)</label>
+        <input id="kinetic-mass" type="number"/> <br/> <br/>
+        <label>Velocity (m/s)</label>
+        <input id="kinetic-velocity" type="number"/> <br/> <br/>
+        <label>Distance (m)</label>
+        <input id="kinetic-distance" type="number" placeholder="(optional)"/>
+      </div>
+      <div id="potential" style="visibility: hidden;">
+        <label>Mass (kg)</label>
+        <input id="potential-mass" type="number"/> <br/> <br/>
+        <label>g</label>
+        <input id="potential-g" type="number" value="9.80665"/> <br/> <br/>
+        <label>Height (m)</label>
+        <input id="potential-height" type="number"/> <br/> <br/>
+        <label>Distance (m)</label>
+        <input id="potential-distance" type="number" placeholder="(optional)"/>
+      </div>
+      <div id="electric" style="visibility: hidden;">
+        <label>Voltage</label>
+        <input id="electric-voltage" type="number"/> <br/> <br/>
+        <label>Amps</label>
+        <input id="electric-amps" type="number"/> <br/> <br/>
+        <label>Time (s)</label>
+        <input id="electric-time" type="number"/>
+      </div>
+      <div id="force" style="visibility: hidden;">
+        <label>Mass (kg)</label>
+        <input id="force-mass" type="number"/> <br/> <br/>
+        <label>Acceleration (m/s^2)</label>
+        <input id="force-acceleration" type="number"/>
+      </div>
+      <div id="impulse" style="visibility: hidden;">
+        <label>Mass (kg)</label>
+        <input id="impulse-mass" type="number"/> <br/> <br/>
+        <label>Elapse time (s)</label>
+        <input id="impulse-time" type="number"/>
+      </div>
+      <div id="work" style="visibility: hidden;">
+        <label>Force</label>
+        <input id="work-force" type="number"/> <br/> <br/>
+        <label>Displacement (m)</label>
+        <input id="work-displacement" type="number"/>
+      </div>
+    </div> <br/> <br/>
+    <button id="btn" onclick="calculate();">Return value</button>
+    <p id="result"></p>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+body {
+  background-color: #222;
+  color: #ccc;
+}
+#main {
+  position: relative;
+}
+#kinetic, #potential, #electric, #force, #impulse, #work {
+  position: absolute;
+}
+input[type=number] {
+  background-color: #111;
+  border-radius: 5px;
+  color: #ccc;
+  -moz-appearance: textfield;
+}
+button {
+  background-color: #111;
+  color: #ccc;
+  margin-top: 125px;
+}
+select {
+  background-color: #111;
+  color: #ccc;
+}
