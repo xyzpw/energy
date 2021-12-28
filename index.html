@@ -11,6 +11,7 @@
       <option value="potential">Potential energy</option>
       <option value="electric">Electric energy</option>
       <option value="force">Force</option>
+      <option value="acceleration">Acceleration</option>
       <option value="impulse">Impulse</option>
       <option value="work">Work</option>
     </select>
@@ -46,6 +47,14 @@
         <input id="force-mass" type="number"/> <br/> <br/>
         <label>Acceleration (m/s^2)</label>
         <input id="force-acceleration" type="number"/>
+      </div>
+      <div id="acceleration" style="visibility: hidden;">
+        <label>Final velocity (m/s)</label>
+        <input id="acceleration-final" type="number"/> <br/> <br/>
+        <label>Initial velocity (m/s)</label>
+        <input id="acceleration-start" type="number"/> <br/> <br/>
+        <label>Time</label>
+        <input id="acceleration-time" type="number"/>
       </div>
       <div id="impulse" style="visibility: hidden;">
         <label>Mass (kg)</label>
