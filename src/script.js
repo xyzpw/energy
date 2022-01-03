@@ -73,7 +73,7 @@ function calculate() {
   switch (energySelect) {
     case 'kinetic': {
       const mass = document.getElementById('kinetic-mass').value, velocity = document.getElementById('kinetic-velocity').value, distance = document.getElementById('kinetic-distance').value;
-      if (distance != null) {
+      if (distance > 0) {
         result.textContent = `${getKinetic(mass, velocity, distance)} Newtons`;
       } else {
         result.textContent = `${getKinetic(mass, velocity)} Joules`;
@@ -83,10 +83,10 @@ function calculate() {
     case 'potential': {
       const mass = document.getElementById('potential-mass').value, g = document.getElementById('potential-g').value, height = document.getElementById('potential-height').value,
         distance = document.getElementById('potential-distance').value;
-      if (distance != null) {
+      if (distance > 0) {
         result.textContent = `${getPotential(mass, g, height, distance)} Newtons`;
       } else {
-        result.textContent = `${getPotential(mass, g, height)}`;
+        result.textContent = `${getPotential(mass, g, height)} Joules`;
       }
       break;
     }
