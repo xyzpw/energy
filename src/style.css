@@ -5,7 +5,7 @@ body {
 #main {
   position: relative;
 }
-#kinetic, #potential, #electric, #force, #impulse, #work {
+#kinetic, #potential, #electric, #force, #impulse, #work, #amp {
   position: absolute;
 }
 input[type=number] {
@@ -13,6 +13,11 @@ input[type=number] {
   border-radius: 5px;
   color: #ccc;
   -moz-appearance: textfield;
+}
+input {
+  background-color: #111;
+  border-radius: 5px;
+  color: #ccc;
 }
 button {
   background-color: #111;

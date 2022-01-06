@@ -7,6 +7,10 @@ document.addEventListener('keydown', (event) => {
   if (event.key == 'Enter') document.getElementById('btn').click();
 });
 
+function removeText(txt) {
+  return txt.replace(/[^0-9.]/g, '')
+}
+
 function showOnly(_div)
 {
   console.log(_div)
@@ -67,6 +71,11 @@ function getWork(force, displacement) {
   return joules;
 }
 
+function getAmp(volt, ohm) {
+  const amps = volt / ohm;
+  return amps;
+}
+
 function calculate() {
   const energySelect = document.getElementById('energy-select').value;
   const result = document.getElementById('result');
@@ -93,6 +102,11 @@ function calculate() {
     case 'electric': {
       const volt = document.getElementById('electric-voltage').value, amp = document.getElementById('electric-amps').value, time = document.getElementById('electric-time').value;
       result.textContent = `${getElectric(volt, amp, time)} Watts`;
+      break;
+    }
+    case 'amp': {
+      const volt = removeText(document.getElementById('amp-voltage').value), ohm = removeText(document.getElementById('amp-ohm').value);
+      result.textContent = `${getAmp(volt, ohm)} amps`;
       break;
     }
     case 'force': {
