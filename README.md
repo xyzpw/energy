@@ -12,7 +12,7 @@ Flash powder = 9200 Joules/gram & density = 0.8 g/cm^3 <br/>
 Black powder = 3000 Joules/gram & density = 0.8 g/cm^3 <br/>
 Uranium-235 (15 kg in a nuke) = 144,000,000 MJ/kg & density = 19.1 g/cm^3
 ### explosive damages to human body
-1 PSI can possibly rupture ear drums <br/>
+2 PSI can possibly rupture ear drums <br/>
 5 PSI ruptures ear drums (50%) & can lead to brain damage<br/>
 14 PSI ruptures ear drums (100%) & possibly ruptures lungs<br/>
 40 PSI ruptures lungs (50%) & can cause death <br/>
