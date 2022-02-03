@@ -89,3 +89,7 @@ Break nose: 8 Joules
 Break eye-socket: 2.1 Joules
 <br/>
 Small bones: 100 Newtons
+# Formulas
+### Force time
+A lot of people don't know this one so here <br/>
+F = m * v / time
