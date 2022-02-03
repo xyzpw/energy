@@ -56,6 +56,11 @@ function getForce(mass, acceleration) {
   return newtons;
 }
 
+function getForceTime(mass, velocity, time){
+  const newtons = mass * velocity / time;
+  return newtons;
+}
+
 function getAcceleration(starting, final, time) {
   const acceleration = ( final - starting ) / time;
   return acceleration;
@@ -112,6 +117,12 @@ function calculate() {
     case 'force': {
       const mass = document.getElementById('force-mass').value, acceleration = document.getElementById('force-acceleration').value;
       result.textContent = `${getForce(mass, acceleration)} Newtons`;
+      break;
+    }
+    case 'force-time':{
+      const mass = document.getElementById("force-time-mass").value, velocity = document.getElementById("force-time-velocity").value,
+        time = document.getElementById("force-time-time").value;
+      result.textContent = `${getForceTime(mass, velocity, time)}`;
       break;
     }
     case 'acceleration': {

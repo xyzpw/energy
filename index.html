@@ -12,6 +12,7 @@
       <option value="electric">Electric energy</option>
       <option value="amp">Amperage (ohm)</option>
       <option value="force">Force</option>
+      <option value="force-time">Force time</option>
       <option value="acceleration">Acceleration</option>
       <option value="impulse">Impulse</option>
       <option value="work">Work</option>
@@ -54,6 +55,14 @@
         <input id="force-mass" type="number"/> <br/> <br/>
         <label>Acceleration (m/s^2)</label>
         <input id="force-acceleration" type="number"/>
+      </div>
+      <div id="force-time" style="visibility: hidden;">
+        <label>Mass (kg)</label>
+        <input id="force-time-mass" type="number"/> <br/> <br/>
+        <label>Velocity (m/s)</label>
+        <input id="force-time-velocity" type="number"/> <br/> <br/>
+        <label>Elapse time</label>
+        <input id="force-time-time" type="number"/>
       </div>
       <div id="acceleration" style="visibility: hidden;">
         <label>Final velocity (m/s)</label>
