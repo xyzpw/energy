@@ -11,7 +11,8 @@ Composition B (60/40 RDX/TNT) = 5200 Joules/gram & density = 1.65 g/cm^3 <br/>
 Flash powder = 9200 Joules/gram & density = 0.8 g/cm^3 <br/>
 Black powder = 3000 Joules/gram & density = 0.8 g/cm^3 <br/>
 Uranium-235 (15 kg in a nuke) = 144,000,000 MJ/kg & density = 19.1 g/cm^3 <br/>
-Hydrogen = 120 MJ/kg & density = 0.0701 g/cm^3
+Hydrogen = 120 MJ/kg & density = 0.0701 g/cm^3 <br/>
+Gasoline = 46 MJ/kg & density = 755 kg/m^3
 ### explosive damages to human body
 2 PSI can possibly rupture ear drums <br/>
 5 PSI ruptures ear drums (50%) & can lead to brain damage<br/>
