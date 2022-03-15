@@ -15,7 +15,8 @@ Hydrogen = 120 MJ/kg & density = 0.0701 g/cm^3 <br/>
 Gasoline = 46 MJ/kg & density = 755 kg/m^3
 ### explosive damages to human body
 2 PSI can possibly rupture ear drums <br/>
-5 PSI ruptures ear drums (50%) & can lead to brain damage<br/>
+5 PSI ruptures ear drums (50%)<br/>
+7.5 to 15 can lead to brain damage<br/>
 14 PSI ruptures ear drums (100%) & possibly ruptures lungs<br/>
 40 PSI ruptures lungs (50%) & can cause death <br/>
 80 PSI ruptures intestines & ruptures 100% of lungs<br/>
