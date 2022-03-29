@@ -9,7 +9,7 @@ TNT = 4184 Joules/gram & density = 1.65 g/cm^3 <br/>
 RDX = 6000 Joules/gram & density = 1.82 g/cm^3 <br/>
 Composition B (60/40 RDX/TNT) = 5200 Joules/gram & density = 1.65 g/cm^3 <br/>
 Flash powder = 9200 Joules/gram & density = 0.8 g/cm^3 <br/>
-Black powder = 3000 Joules/gram & density = 0.8 g/cm^3 <br/>
+Black powder = 3000 Joules/gram & density = 1.8 g/cm^3 <br/>
 Uranium-235 (15 kg in a nuke) = 144,000,000 MJ/kg & density = 19.1 g/cm^3 <br/>
 Hydrogen = 120 MJ/kg & density = 0.0701 g/cm^3 <br/>
 Gasoline = 46 MJ/kg & density = 755 kg/m^3
