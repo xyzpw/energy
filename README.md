@@ -12,6 +12,7 @@ Flash powder = 9200 Joules/gram & density = 0.8 g/cm^3 <br/>
 Black powder = 3000 Joules/gram & density = 1.8 g/cm^3 <br/>
 Uranium-235 (15 kg in a nuke) = 144,000,000 MJ/kg & density = 19.1 g/cm^3 <br/>
 Hydrogen = 120 MJ/kg & density = 0.0701 g/cm^3 <br/>
+Smokeless powder = 6,375 J/g & density = 1.6 G/cm^2 <br.>
 Gasoline = 46 MJ/kg & density = 755 kg/m^3
 ### explosive damages to human body
 2 PSI can possibly rupture ear drums <br/>
