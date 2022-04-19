@@ -88,7 +88,7 @@ Rupture Liver: 30 Joules
 <br/>
 Explosion/noise rupture eardum: 2-15 PSI (161-170 Decibels)
 <br/>
-Break nose: 8 Joules
+Break nose: 8 Newtons
 <br/>
 Break eye-socket: 2.1 Joules
 <br/>
