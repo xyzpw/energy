@@ -104,4 +104,6 @@ Larger walls can reduce decibels by about 40 at times. 40PSI/1,000 = 0.04 PSI, w
 # Formulas
 ### Force time
 A lot of people don't know this one so here <br/>
-F = m * v / time
+F<sub>avg</sub> = m * v / time <br/>
+We can also use F<sub>avg</sub> = (0.5 * m * v<sup>2</sup>) / d <br/>
+d is displacement
