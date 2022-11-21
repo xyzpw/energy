@@ -94,13 +94,13 @@ Break eye-socket: 2.1 Joules
 <br/>
 Small bones: 100 Newtons <br/>
 (copied from other source)<br/>
-Hydrostatic shock `Hydrostatic shock is the controversial concept that a penetrating projectile (such as a bullet) can produce a pressure wave that causes "remote neural damage", "subtle damage in neural tissues" and/or "rapid incapacitating effects" in living targets.` - From wikipedia <br/>
-`an analysis of experiments of dogs shot in the thigh they report highly significant (p < 0.01), easily detectable neural effects in the hypothalamus and hippocampus with energy transfer levels close to 550 ft⋅lbf (750 J). - From wikipedia` <br/>
-Energy transfered from bullet to human body can result in brain damage and ruptured organs. The human skin density 1.02 g/cm2 which is 10.2 kg/m2 <br/>
-If a 9mm transfers 490 Joules of kinetic energy, the human body it will have a hydrostatic shock of 48 Joules because of the skin having a density of 10.2 kg/m2. It takes about 50 Joules to cause brain damage and 80 Joules for 50% chance of brain damage. <br/>
-Explosives If an explosive goes off it releases a lot of energy depending on the energy density of the chemicals used, flash powder for example has an energy density of 9,200 J/g, dividing ~6,900 from Joules and you would get the PSI, 40 PSI has a 50% chance of rupturing lungs.
-Decibels are on a log scale, so 10dB is 10x less energy, 20x 100x less energy, etc. Being behind a wall would reduce 30dB(own data from decibel readers), therefor an explosion energy can be divided by 1,000 <br/>
-Larger walls can reduce decibels by about 40 at times. 40PSI/1,000 = 0.04 PSI, which makes a huge difference to being next to an explosion. 
+"Hydrostatic shock is the controversial concept that a penetrating projectile (such as a bullet) can produce a pressure wave that causes "remote neural damage", "subtle damage in neural tissues" and/or "rapid incapacitating effects" in living targets." - Wikipedia <br/>
+"In analysis of experiments of dogs shot in the thigh they report highly significant (p < 0.01), easily detectable neural effects in the hypothalamus and hippocampus with energy transfer levels close to 550 ft⋅lbf (750 J)." - Wikipedia <br/>
+Energy transfered from a bullet to human body can result in brain damage and ruptured organs. It takes about 50 joules to cause brain damage and 80 joules for 50% chance of brain damage. <br/>
+<b>Explosives</b> <br/>
+If an explosive goes off it releases a lot of energy depending on the energy density of the chemical used, flash powder for example has an energy density of about 9,200 J/g, dividing ~6,900 from joules and you would get the PSI. 40 PSI has a 50% chance of rupturing lungs. <br/>
+Decibels are on a log scale, so 10dB is 10x less energy, 20dB is 100x less energy, etc. Being behind a wall would reduce 30dB (own data from decibel readers), therefor an explosive's energy would be divided by 1,000. Larger walls (like brick walls) can reduce decibels by about 40dB. 40 PSI / 1,000 = 0.04 PSI, which makes a huge difference to being next to an explosion.
+
 # Formulas
 ### Force time
 A lot of people don't know this one so here <br/>
