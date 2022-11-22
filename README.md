@@ -10,9 +10,10 @@ RDX = 6000 Joules/gram & density = 1.82 g/cm^3 <br/>
 Composition B (60/40 RDX/TNT) = 5200 Joules/gram & density = 1.65 g/cm^3 <br/>
 Flash powder = 9200 Joules/gram & density = 0.8 g/cm^3 <br/>
 Black powder = 3000 Joules/gram & density = 1.8 g/cm^3 <br/>
-Uranium-235 (15 kg in a nuke) = 144,000,000 MJ/kg & density = 19.1 g/cm^3 <br/>
+Uranium-235 = 144,000,000 MJ/kg & density = 19.1 g/cm^3 <br/>
+Uranium-235 Nuclear = 3,900,000 MJ/kg <a href="https://energyeducation.ca/encyclopedia/Energy_density">ref</a> <br/>
 Hydrogen = 120 MJ/kg & density = 0.0701 g/cm^3 <br/>
-Smokeless powder = 6,375 J/g & density = 1.6 G/cm^2 <br.>
+Smokeless powder = 6,375 J/g & density = 1.6 G/cm^2 <br/>
 Gasoline = 46 MJ/kg & density = 755 kg/m^3
 ### explosive damages to human body
 2 PSI can possibly rupture ear drums <br/>
