@@ -14,6 +14,7 @@ Uranium-235 = 144,000,000 MJ/kg & density = 19.1 g/cm^3 <br/>
 Uranium-235 Nuclear = 3,900,000 MJ/kg <a href="https://energyeducation.ca/encyclopedia/Energy_density">ref</a> <br/>
 Hydrogen = 120 MJ/kg & density = 0.0701 g/cm^3 <br/>
 Smokeless powder = 6,375 J/g & density = 1.6 G/cm^2 <br/>
+Ammonium Nitrate = 2.5 MJ/L <br/>
 Gasoline = 46 MJ/kg & density = 755 kg/m^3
 ### explosive damages to human body
 2 PSI can possibly rupture ear drums <br/>
