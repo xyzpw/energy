@@ -3,7 +3,7 @@
 To calculate energy from explosions, you multiply the volume by the density of the explosive, multiply by the explosive energy density. <br/>
 example: A pipe of 5 cm tall and 4 cm in diameter has a volume of 62.8cm^3, multiply that by an explosive density like TNT for example to get the grams 1.65g/cm^3. Now multiply by the energy density of the explosive (TNT) which is 4,184 Joules per gram. <br/>
 The result is 433,546 Joules. If there are 6894.7573 newtons in 1 psi we can calculate that to 62.88 PSI. <br/>
-You can use the <a href="https://potatochips2001.github.io/sound/" target="_blank">sound calculator</a> to calculate the decibels.
+You can use the <a href="https://xyzpw.github.io/sound/" target="_blank">sound calculator</a> to calculate the decibels.
 ### list of explosives
 TNT = 4184 Joules/gram & density = 1.65 g/cm^3 <br/>
 RDX = 6000 Joules/gram & density = 1.82 g/cm^3 <br/>
