@@ -1,146 +1,158 @@
-document.addEventListener('change', () => {
-  const energySelect = document.getElementById('energy-select').value;
-  showOnly(energySelect);
+let divs = Array();
+document.addEventListener('DOMContentLoaded', () => {
+    divs.push(document.getElementById("kinetic"));
+    divs.push(document.getElementById("potential"));
+    divs.push(document.getElementById("electric"));
+    divs.push(document.getElementById("amperage"));
+    divs.push(document.getElementById("force"));
+    divs.push(document.getElementById("acceleration"));
+    divs.push(document.getElementById("impulse"));
+    divs.push(document.getElementById("work"));
+    divs.push(document.getElementById("rest"));
 });
-
-document.addEventListener('keydown', (event) => {
-  if (event.key == 'Enter') document.getElementById('btn').click();
-});
-
-function removeText(txt) {
-  return txt.replace(/[^0-9.]/g, '')
-}
-
-function showOnly(_div)
-{
-  console.log(_div)
-  const energyOptions = document.getElementById('energy-select').options;
-  for (key in energyOptions) {
-    if (isNaN(key)) break;
-    if (energyOptions[key].value == _div) {
-      document.getElementById(energyOptions[key].value).style.visibility = 'visible';
-    } else {
-      document.getElementById(energyOptions[key].value).style.visibility = 'hidden';
+const c = 299792458;
+document.addEventListener("input", () => {
+    if (document.readyState === 'complete'){
+        let divOption = document.getElementById("energy-options").value;
+        showOnly(document.getElementById(divOption));
+        let divHeight = document.getElementById(divOption).offsetHeight;
+        document.getElementById("btn").style = `margin-top: ${divHeight}px`;
     }
-  }
-  return 0;
+})
+
+document.addEventListener("keydown", (k) => {
+    if (k.key === 'Enter') document.getElementById("btn").click();
+})
+
+function showOnly(divName){
+    divs.forEach(element => {
+        if (element.id == divName.id){
+            document.getElementById(element.id).style = 'visibility: visible';
+        } else {
+            document.getElementById(element.id).style = 'visibility: hidden';
+        }
+    });
 }
 
-function getKinetic(mass, velocity, distance=null) {
-  let joules;
-  if (distance != null && distance > 0) {
-    joules = (0.5 * mass * velocity**2) / distance;
-  } else {
-    joules = (0.5 * mass * velocity**2);
-  }
-  return joules;
+function getKineticEnergy(mass, velocity){
+    let kineticEnergy = (1/2) * mass * velocity**2;
+    return kineticEnergy;
 }
 
-function getPotential(mass, g, height, distance=null) {
-  let joules;
-  if (distance != null && distance > 0) {
-    joules = (mass * g * height) / distance;
-  } else {
-    joules = (mass * g * height);
-  }
-  return joules;
+function getPotentialEnergy(mass, g, height){
+    let potentialEnergy = mass * g * height;
+    return potentialEnergy;
 }
 
-function getElectric(volt, amp, time) {
-  const watt = volt * amp * time;
-  return watt;
+function getElectricWatts(voltage, amperage, time){
+    let watts = voltage * amperage * time;
+    return watts;
 }
 
-function getForce(mass, acceleration) {
-  const newtons = mass * acceleration;
-  return newtons;
+function getAmperage(voltage, ohms){
+    let current = voltage / ohms;
+    return current;
 }
 
-function getForceTime(mass, velocity, time){
-  const newtons = mass * velocity / time;
-  return newtons;
+function getForce(mass, acceleration){
+    let force = mass * acceleration;
+    return force;
 }
 
-function getAcceleration(starting, final, time) {
-  const acceleration = ( final - starting ) / time;
-  return acceleration;
+function getAcceleration(velocity, initialVelocity, time){
+    let acceleration = (velocity - initialVelocity) / time;
+    return acceleration;
 }
 
-function getImpulse(force, time) {
-  const newtonSecond = force * time;
-  return newtonSecond;
+function getImpulse(force, time){
+    let impulse = force * time;
+    return impulse;
 }
 
-function getWork(force, displacement) {
-  const joules = force * displacement;
-  return joules;
+function getWork(force, displacement){
+    let work = force * displacement;
+    return work;
 }
 
-function getAmp(volt, ohm) {
-  const amps = volt / ohm;
-  return amps;
+function getRest(mass){
+    let energy = mass * c**2;
+    return energy;
 }
 
-function calculate() {
-  const energySelect = document.getElementById('energy-select').value;
-  const result = document.getElementById('result');
-  switch (energySelect) {
-    case 'kinetic': {
-      const mass = document.getElementById('kinetic-mass').value, velocity = document.getElementById('kinetic-velocity').value, distance = document.getElementById('kinetic-distance').value;
-      if (distance > 0) {
-        result.textContent = `${getKinetic(mass, velocity, distance)} Newtons`;
-      } else {
-        result.textContent = `${getKinetic(mass, velocity)} Joules`;
-      }
-      break;
+
+function calculate(){
+    let energyOption = document.getElementById("energy-options").value;
+    let results = document.getElementById("results");
+    switch (energyOption){
+        case "kinetic": {
+            let mass = document.getElementById("kinetic-mass").value;
+            let velocity = document.getElementById("kinetic-velocity").value;
+            let kineticEnergy = getKineticEnergy(mass, velocity);
+            results.textContent = `${kineticEnergy} Joules`;
+            break;
+        }
+        case "potential": {
+            let mass = document.getElementById("potential-mass").value;
+            let gravity = document.getElementById("potential-gravitational-acceleration").value;
+            let height = document.getElementById("potential-height").value;
+            let potentialEnergy = getPotentialEnergy(mass, gravity, height);
+            results.textContent = `${potentialEnergy} Joules`;
+            break;
+        }
+        case "electric": {
+            let voltage = document.getElementById("electric-voltage").value;
+            let amperage = document.getElementById("electric-amperage").value;
+            let time = document.getElementById("electric-time").value;
+            let watts = getElectricWatts(voltage, amperage, time);
+            results.textContent = `${watts} Watts`;
+            break;
+        }
+        case "amperage": {
+            let voltage = document.getElementById("amperage-voltage").value;
+            let ohms = document.getElementById("amperage-ohms").value;
+            let current = getAmperage(voltage, ohms);
+            results.textContent = `${current} Amps`;
+            break;
+        }
+        case "force": {
+            let mass = document.getElementById("force-mass").value;
+            let acceleration = document.getElementById("force-acceleration").value;
+            let force = getForce(mass, acceleration);
+            results.textContent = `${force} Newtons`;
+            break;
+        }
+        case "acceleration": {
+            let velocity = document.getElementById("acceleration-velocity").value;
+            let initialVelocity = document.getElementById("acceleration-initialvelocity").value;
+            let time = document.getElementById("acceleration-time").value;
+            let acceleration = getAcceleration(velocity, initialVelocity, time);
+            results.textContent = `${acceleration} m/s`;
+            break;
+        }
+        case "impulse": {
+            let force = document.getElementById("impulse-force").value;
+            let time = document.getElementById("impulse-time").value;
+            let impulse = getImpulse(force, time);
+            results.textContent = `${impulse} Newton seconds`;
+            break;
+        }
+        case "work": {
+            let force = document.getElementById("work-force").value;
+            let displacement = document.getElementById("work-displacement").value;
+            let work = getWork(force, displacement);
+            results.textContent = `${work} Joules`;
+            break;
+        }
+        case "rest": {
+            let mass = document.getElementById("rest-mass").value;
+            let energy = getRest(mass);
+            results.textContent = `${energy.toLocaleString()} Joules`;
+            break;
+        }
+        default: {
+            break;
+        }
     }
-    case 'potential': {
-      const mass = document.getElementById('potential-mass').value, g = document.getElementById('potential-g').value, height = document.getElementById('potential-height').value,
-        distance = document.getElementById('potential-distance').value;
-      if (distance > 0) {
-        result.textContent = `${getPotential(mass, g, height, distance)} Newtons`;
-      } else {
-        result.textContent = `${getPotential(mass, g, height)} Joules`;
-      }
-      break;
-    }
-    case 'electric': {
-      const volt = document.getElementById('electric-voltage').value, amp = document.getElementById('electric-amps').value, time = document.getElementById('electric-time').value;
-      result.textContent = `${getElectric(volt, amp, time)} Watts`;
-      break;
-    }
-    case 'amp': {
-      const volt = removeText(document.getElementById('amp-voltage').value), ohm = removeText(document.getElementById('amp-ohm').value);
-      result.textContent = `${getAmp(volt, ohm)} amps`;
-      break;
-    }
-    case 'force': {
-      const mass = document.getElementById('force-mass').value, acceleration = document.getElementById('force-acceleration').value;
-      result.textContent = `${getForce(mass, acceleration)} Newtons`;
-      break;
-    }
-    case 'force-time':{
-      const mass = document.getElementById("force-time-mass").value, velocity = document.getElementById("force-time-velocity").value,
-        time = document.getElementById("force-time-time").value;
-      result.textContent = `${getForceTime(mass, velocity, time)}`;
-      break;
-    }
-    case 'acceleration': {
-      const final = document.getElementById('acceleration-final').value, start = document.getElementById('acceleration-start').value,
-        time = document.getElementById('acceleration-time').value;
-        result.textContent = `${getAcceleration(start, final, time)} m/s^2`;
-        break;
-    }
-    case 'impulse': {
-      const force = document.getElementById('impulse-mass').value, time = document.getElementById('impulse-time').value;
-      result.textContent = `${getImpulse(force, time)} Newton Seconds`;
-      break;
-    }
-    case 'work': {
-      const force = document.getElementById('work-force').value, displacement = document.getElementById('work-displacement').value;
-      result.textContent = `${getWork(force, displacement)} Joules`;
-      break;
-    }
-  }
-  return 0;
 }
+
+

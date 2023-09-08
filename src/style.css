@@ -1,30 +1,34 @@
-body {
-  background-color: #222;
-  color: #ccc;
+body{
+    background-color: #121212;
+    color: #ccc;
 }
-#main {
-  position: relative;
+
+.ui {
+    background-color: #222;
+    color: #ccc;
+    border-radius: 5px;
+    border-color: transparent;
 }
-#kinetic, #potential, #electric, #force, #impulse, #work, #amp {
-  position: absolute;
+
+.divs {
+    position: absolute;
 }
-input[type=number] {
-  background-color: #111;
-  border-radius: 5px;
-  color: #ccc;
-  -moz-appearance: textfield;
+
+#wrapper{
+    position: relative;
 }
-input {
-  background-color: #111;
-  border-radius: 5px;
-  color: #ccc;
+
+#btn {
+    background-color: #222;
+    color: #ccc;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-top: 70px;
 }
-button {
-  background-color: #111;
-  color: #ccc;
-  margin-top: 125px;
-}
+
 select {
-  background-color: #111;
-  color: #ccc;
+    background-color: #222;
+    color: #ccc;
+    border-radius: 5px;
+    border-color: transparent;
 }
