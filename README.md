@@ -1,4 +1,5 @@
 # energy
+This is just educational -- I enjoy sharing information.
 ### Calculating energy from explosions
 To calculate energy from explosions, you multiply the volume by the density of the explosive, multiply by the explosive energy density. <br/>
 example: A pipe of 5 cm tall and 4 cm in diameter has a volume of 62.8cm^3, multiply that by an explosive density like TNT for example to get the grams 1.65g/cm^3. Now multiply by the energy density of the explosive (TNT) which is 4,184 Joules per gram. <br/>
